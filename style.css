@@ -57,9 +57,14 @@ table {
     font-style: normal;
     font-display: swap;
 }
+
+flex-item {
+    flex: 1 1 300px;
+}
 body {
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 div#wrapper {
     flex: 0 1 800px;
@@ -70,18 +75,21 @@ div.banner {
     font-size: 2rem;
     color: aliceblue;
     text-align: center;
-    position: absolute;
-    top: 40%;
+    top: 20%;
+    position:absolute;
     width: 300px;
-    height: 40px;
-
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    
 }
-
+.banner div {
+    margin: auto 0;
+}
 .banner img {
     object-fit: scale-down;
-    display: inline;
 }
 
-aside img {
+aside>img {
     width: 300px;
 }
